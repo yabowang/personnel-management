@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.SysUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.management.data.domain.SysUser">
+            <id property="sysUserId" column="sys_user_id" jdbcType="INTEGER"/>
+            <result property="sysNickName" column="sys_nick_name" jdbcType="VARCHAR"/>
+            <result property="sysUserRole" column="sys_user_role" jdbcType="VARCHAR"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="entryId" column="entry_id" jdbcType="INTEGER"/>
+            <result property="entryTime" column="entry_time" jdbcType="TIMESTAMP"/>
+            <result property="modifyId" column="modify_id" jdbcType="INTEGER"/>
+            <result property="modifyTime" column="modify_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        sys_user_id,sys_nick_name,sys_user_role,
+        user_name,password,remark,
+        entry_id,entry_time,modify_id,
+        modify_time
+    </sql>
+</mapper>

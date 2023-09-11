@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.PositionMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.management.data.domain.Position">
+            <id property="postId" column="post_id" jdbcType="INTEGER"/>
+            <result property="postName" column="post_name" jdbcType="VARCHAR"/>
+            <result property="postState" column="post_state" jdbcType="INTEGER"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="entryId" column="entry_id" jdbcType="INTEGER"/>
+            <result property="entryTime" column="entry_time" jdbcType="TIMESTAMP"/>
+            <result property="modifyId" column="modify_id" jdbcType="INTEGER"/>
+            <result property="modifyTime" column="modify_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        post_id,post_name,post_state,
+        remark,entry_id,entry_time,
+        modify_id,modify_time
+    </sql>
+</mapper>

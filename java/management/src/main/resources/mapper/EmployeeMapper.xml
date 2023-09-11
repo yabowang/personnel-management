@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.EmployeeMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.management.data.domain.Employee">
+            <id property="empId" column="emp_id" jdbcType="INTEGER"/>
+            <result property="empName" column="emp_name" jdbcType="VARCHAR"/>
+            <result property="empState" column="emp_state" jdbcType="INTEGER"/>
+            <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="INTEGER"/>
+            <result property="birthDate" column="birth_date" jdbcType="DATE"/>
+            <result property="currentAddr" column="current_addr" jdbcType="VARCHAR"/>
+            <result property="conUser" column="con_user" jdbcType="VARCHAR"/>
+            <result property="conMobile" column="con_mobile" jdbcType="VARCHAR"/>
+            <result property="conAddr" column="con_addr" jdbcType="VARCHAR"/>
+            <result property="joinTime" column="join_time" jdbcType="TIMESTAMP"/>
+            <result property="dimissionTime" column="dimission_time" jdbcType="TIMESTAMP"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="entryId" column="entry_id" jdbcType="INTEGER"/>
+            <result property="entryTime" column="entry_time" jdbcType="TIMESTAMP"/>
+            <result property="modifyId" column="modify_id" jdbcType="INTEGER"/>
+            <result property="modifyTime" column="modify_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        emp_id,emp_name,emp_state,
+        mobile,email,sex,
+        birth_date,current_addr,con_user,
+        con_mobile,con_addr,join_time,
+        dimission_time,remark,entry_id,
+        entry_time,modify_id,modify_time
+    </sql>
+</mapper>
